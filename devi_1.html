@@ -1,0 +1,72 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+         function sayHello() {
+             var data = jalankan("Devi", 22);
+            document.write (data);
+         }
+
+         function jalankan(name, age) {
+            var data1 = {
+                "name":name, 
+                "age":age, 
+                "address":"Jalan Candi Gebang, Perum. Jambusari Indah, Gg. Delima IV, Nomor 26", 
+                "hobbies":["Cooking", "Sport", "Listening music"],
+                "is_married": false,
+                "list_school":[
+                    {
+                        "name":"SD NU VIII Lahat",
+                        "year_in":"2003",
+                        "year_out":"2009",
+                        "major":null
+                    },
+                    {
+                        "name":"SMP Negeri 2 Lahat",
+                        "year_in":"2009",
+                        "year_out":"2012",
+                        "major":null
+                    },
+                    {
+                        "name":"SMA Unggul Negeri 4 Lahat",
+                        "year_in":"2012",
+                        "year_out":"2015",
+                        "major":"IPA"
+                    },
+                    {
+                        "name":"Universitas Pembangunan Nasional Veteran Yogyakarta",
+                        "year_in":"2015",
+                        "year_out":"2018",
+                        "major":"D3 Teknik Kimia"
+                    }
+                ],
+                "skill":[
+                    {
+                        "name":"Scilab",
+                        "level":"Advanced"
+                    },
+                    {
+                        "name":"Javascript",
+                        "level":"Beginner"
+                    },
+                    {
+                        "name":"Chemcad",
+                        "level":"Beginner"
+                    }
+                ],
+                "interest_in_koding":true
+            }
+
+            return JSON.stringify(data1)
+         }
+      </script>
+      
+   </head>
+   
+   <body>
+      <p>Click the following button to call the function</p>      
+      <form>
+         <input type = "button" onclick = "sayHello()" value = "Tekan tombol ini">
+      </form>      
+      <p>Use different text in write method and then try...</p>
+   </body>
+</html>
